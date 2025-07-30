@@ -1,0 +1,37 @@
+
+PLAY [Configure OPS445 CentOS 7.x VM] ******************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [jkwok]
+
+TASK [Ensure Apache is updated] ************************************************
+ok: [jkwok]
+
+TASK [Install EPEL repository] *************************************************
+ok: [jkwok]
+
+TASK [Remove tree package] *****************************************************
+ok: [jkwok]
+
+TASK [Set hostname to Seneca ID] ***********************************************
+changed: [jkwok]
+
+TASK [Create user with sudo access] ********************************************
+changed: [jkwok]
+
+TASK [Add SSH public key to new user] ******************************************
+changed: [jkwok]
+
+TASK [Create lab directories] **************************************************
+changed: [jkwok] => (item=1)
+changed: [jkwok] => (item=2)
+changed: [jkwok] => (item=3)
+changed: [jkwok] => (item=4)
+changed: [jkwok] => (item=5)
+changed: [jkwok] => (item=6)
+changed: [jkwok] => (item=7)
+changed: [jkwok] => (item=8)
+
+PLAY RECAP *********************************************************************
+jkwok                      : ok=8    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
